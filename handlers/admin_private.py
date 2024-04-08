@@ -37,3 +37,4 @@ async def delete_product(message: types.Message):
 @admin_router.message(F.text == "Добавить/Изменить баннер")
 async def chang_product(message: types.Message):
     await message.answer("Ты изменил баннер")
+
