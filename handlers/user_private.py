@@ -29,5 +29,3 @@ async def start_cmd(message: types.Message, session: AsyncSession):
 @user_private_router.message(Command('menu', 'name'))
 async def menu_cmd(message: types.Message):
     await message.answer("Вот меню:")
-
-

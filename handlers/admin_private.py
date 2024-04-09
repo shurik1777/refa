@@ -27,12 +27,12 @@ async def admin_features(message: types.Message):
 
 
 @admin_router.message(F.text == "Добавить картинку")
-async def chang_product(message: types.Message):
+async def add_image1(message: types.Message):
     await message.answer("Отправляй картинку")
 
 
 @admin_router.message(F.text == "Все картинки квиза")
-async def delete_product(message: types.Message):
+async def all_image(message: types.Message):
     # async def delete_product(message: types.Message, counter):
     #     print(counter)
     await message.answer("Вот все картинки")

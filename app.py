@@ -5,13 +5,11 @@ from aiogram.client.bot import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from database.engine import create_db, session_maker
-# from dotenv import find_dotenv, load_dotenv
 from handlers.admin_private import admin_router
 from handlers.user_group import user_group_router
 from handlers.user_private import user_private_router
 from middlewares.db import DataBaseSession
 
-# load_dotenv(find_dotenv())
 
 bot = Bot(token=getenv('TOKEN'), default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
